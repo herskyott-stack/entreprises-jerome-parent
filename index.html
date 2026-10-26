@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Entreprises Jerome Parent — Entrepreneur général à Amqui, Vallée de la Matapédia</title>
+<meta name="description" content="Entreprises Jerome Parent, entrepreneur général à Amqui (Vallée de la Matapédia). 295 Rue des Forges. Demandes de soumission : (418) 629-2050.">
+<meta property="og:title" content="Entreprises Jerome Parent — Entrepreneur général à Amqui, Vallée de la Matapédia">
+<meta property="og:description" content="Entreprises Jerome Parent, entrepreneur général à Amqui (Vallée de la Matapédia). 295 Rue des Forges. Demandes de soumission : (418) 629-2050.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Libre+Franklin:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box} body{margin:0;font-family:var(--body);color:var(--ink);background:var(--bg);line-height:1.55}
+h1,h2,h3{font-family:var(--head);line-height:1.08;margin:0 0 .4em}
+a{color:var(--accent)} .btn{display:inline-block;background:var(--accent);color:#fff;padding:.8rem 1.4rem;border-radius:6px;text-decoration:none;font-weight:700;border:0;cursor:pointer;font-size:1rem}
+.btn:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+section{padding:3rem 0} .foot{padding:1.4rem 20px;text-align:center;font-size:.85rem;opacity:.75}
+form{display:grid;gap:.9rem;max-width:560px} label{display:grid;gap:.3rem;font-weight:600}
+input,select,textarea{padding:.65rem;border:1.5px solid var(--ink);border-radius:6px;font:inherit;background:#fff;color:#14181d}
+.privacy{font-size:.82rem;opacity:.8} .confirm{font-weight:700}
+.hours{display:grid;gap:.2rem} .hours div{display:flex;justify-content:space-between;border-bottom:1px dotted currentColor;padding:.25rem 0;max-width:420px}
+.tel{font-weight:800;text-decoration:none}
+
+:root{--bg:#f3efe6;--ink:#26241f;--accent:#a05c00;--head:'Archivo Black',sans-serif;--body:'Libre Franklin',sans-serif}
+.hero{padding:3rem 0 0}.hero h1{font-size:clamp(2rem,6vw,3.6rem);text-transform:uppercase}
+.rule{height:10px;background:var(--accent);max-width:220px;margin:1rem 0}
+.card{border:3px solid var(--ink);padding:1.6rem;background:#fff;max-width:720px}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"GeneralContractor","name":"Entreprises Jerome Parent","telephone":"+1-418-629-2050","address":{"@type":"PostalAddress","streetAddress":"295 Rue des Forges","addressLocality":"Amqui","addressRegion":"QC","postalCode":"G5J 3B2","addressCountry":"CA"}}</script>
+</head>
+<body>
+
+<main class="wrap"><header class="hero"><h1>Entreprises<br>Jerome Parent</h1><div class="rule"></div>
+<p>Entrepreneur général · Amqui · Vallée de la Matapédia</p>
+<p>Un entrepreneur général d'Amqui joignable, jusqu'à aujourd'hui, uniquement par téléphone — aucune présence web d'aucune sorte. Cette page est le début de sa vitrine : qui il est, où il travaille, et comment lui soumettre un projet.</p>
+<p><a class="btn" href="tel:+14186292050">Appeler le (418) 629-2050</a> <a class="btn" href="#contact">Soumettre un projet</a></p></header>
+<section><div class="card"><h2>Parler de votre projet</h2>
+<p>Chaque projet commence par une conversation. Appelez, ou envoyez une demande avec le formulaire — décrivez le travail, l'endroit et vos délais, et l'entreprise vous revient.</p>
+<p>295 Rue des Forges, Amqui, QC G5J 3B2 · <a class="tel" href="tel:+14186292050">(418) 629-2050</a> · <a href="https://www.google.com/maps/search/?api=1&query=Entreprises+Jerome+Parent+295+Rue+des+Forges+Amqui+QC">Itinéraire</a></p></div></section>
+
+<section id="contact" class="contact">
+  <h2>Votre demande</h2>
+  <form id="cform" novalidate>
+    <label>Votre nom<input type="text" name="name" autocomplete="name" required></label>
+    <label>Téléphone<input type="tel" name="phone" autocomplete="tel" required></label>
+    <label>Votre demande<select name="topic" required><option value="Demande de soumission">Demande de soumission</option><option value="Question sur un projet">Question sur un projet</option><option value="Autre demande">Autre demande</option></select></label>
+    <label>Message<textarea name="message" rows="3"></textarea></label>
+    <button type="submit" class="btn">Envoyer la demande</button>
+    <p class="privacy">Formulaire d'aperçu concept — rien n'est envoyé ni conservé. Sur le site final, ce formulaire arrive directement à l'entreprise.</p>
+    <p class="confirm" id="confirm" role="status"></p>
+  </form>
+</section>
+<script>
+document.getElementById('cform').addEventListener('submit', function(e){
+  e.preventDefault();
+  var t = this.querySelector('select').value;
+  var ref = 'EJP-' + Math.random().toString(36).slice(2,7).toUpperCase();
+  document.getElementById('confirm').textContent = ('fr' === 'fr')
+    ? 'Merci ! Référence de la demande : ' + ref + ' — sujet : ' + t + '. (Aperçu concept : aucune donnée n’a été envoyée.)'
+    : 'Thank you! Request reference: ' + ref + ' — topic: ' + t + '. (Concept preview: nothing was sent.)';
+});
+</script></main>
+<footer class="foot"><p>Concept built by Jake Hersky (<a href="https://hersky.info">hersky.info</a>)</p></footer>
+</body>
+</html>
